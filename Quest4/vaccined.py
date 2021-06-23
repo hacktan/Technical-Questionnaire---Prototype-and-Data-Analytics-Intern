@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-df = pd.read_csv("country_vaccination_stats.csv", delimiter=",")
+df = pd.read_csv(r"http://pi.works/country_vaccinations_dataset", delimiter=",")
 df['date'] = pd.to_datetime(df['date'], format='%m/%d/%Y')
 
 
